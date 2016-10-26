@@ -21,7 +21,7 @@
 
 #include "gui/MainWindow.h"
 
-#include "update.h"
+
 
 #include <QTextCodec>
 
