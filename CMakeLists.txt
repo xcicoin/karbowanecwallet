@@ -199,9 +199,9 @@ elseif (UNIX)
     file(GLOB_RECURSE OBJC_SOURCES src/*.mm)
     set(SOURCES ${SOURCES} ${OBJC_SOURCES})
     set(PLATFORM_DIR OSX)
-    set(MACOSX_BUNDLE_INFO_STRING "Karbowanec GUI wallet")
+    set(MACOSX_BUNDLE_INFO_STRING "XCI GUI wallet")
     set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
-    set(MACOSX_BUNDLE_BUNDLE_NAME KarbowanecWallet)
+    set(MACOSX_BUNDLE_BUNDLE_NAME XCIwallet)
     set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
     set(MACOSX_BUNDLE_BUNDLE_VERSION "$${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
 
@@ -213,8 +213,8 @@ elseif (UNIX)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -maes -D_DARWIN_C_SOURCE")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework Cocoa -framework OpenGL -framework CoreFoundation -framework Carbon -framework IOKit -L/usr/lib")
 
-    set(MACOSX_BUNDLE_ICON_FILE karbowanec.icns)
-    set(APPLICATION_ICON src/images/karbowanec.icns)
+    set(MACOSX_BUNDLE_ICON_FILE xcicoin.icns)
+    set(APPLICATION_ICON src/images/xcicoin.icns)
     set_source_files_properties(${APPLICATION_ICON} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
     set(BUILD_PLATFORM MACOSX_BUNDLE)
@@ -256,8 +256,8 @@ qt5_use_modules(${PROJECT_NAME} Widgets Gui Network)
 
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "Karbowanec-project")
-set(CPACK_PACKAGE_CONTACT "http://karbowanec.com")
+set(CPACK_PACKAGE_VENDOR "xcicoin")
+set(CPACK_PACKAGE_CONTACT "https://xcicoin.org")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -268,20 +268,20 @@ elseif (UNIX)
 
     install(PROGRAMS build/${PROJECT_NAME} DESTINATION bin
     PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
-    install(FILES src/karbowanecwallet.desktop DESTINATION share/applications)
-    install(FILES src/images/karbowanez.png DESTINATION share/pixmaps RENAME karbowanec.png)
-    install(FILES copyright DESTINATION share/doc/karbowanecwallet)
+    install(FILES src/xciwallet.desktop DESTINATION share/applications)
+    install(FILES src/images/xcicoin.png DESTINATION share/pixmaps RENAME xcicoin.png)
+    install(FILES copyright DESTINATION share/doc/xciwallet)
 
     if (NOT RPMBUILD)
         set(CPACK_GENERATOR DEB)
         set(CPACK_DEBIAN_PACKAGE_NAME ${CPACK_PACKAGE_NAME})
         set(CPACK_SYSTEM_NAME 64-bit)
-        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <krbcoin@ukr.net>")
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <devs@xcicoin.org>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Karbowanec KRB wallet
- Karbowanec is Ukrainian decentralized, privacy oriented peer-to-peer
- cryptocurrency. It is open-source, nobody owns or controls Karbowanec
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "XCI Coin wallet
+ is a decentralized, privacy oriented peer-to-peer
+ cryptocurrency. It is open-source, nobody owns or controls XCI
  and everyone can take part.")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-${VERSION_RELEASE}${CPACK_SYSTEM_NAME}")
     else()
