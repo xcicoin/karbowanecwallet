@@ -111,8 +111,6 @@ int main(int argc, char* argv[]) {
   }
 
   splash->finish(&MainWindow::instance());
-  Updater d;
-      d.checkForUpdate();
   MainWindow::instance().show();
   WalletAdapter::instance().open("");
   QObject::connect(QApplication::instance(), &QApplication::aboutToQuit, []() {
