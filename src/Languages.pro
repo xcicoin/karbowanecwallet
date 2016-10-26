@@ -98,7 +98,6 @@ gui/TransactionsListModel.h \
 gui/TransactionsModel.h \
 gui/TransferFrame.h \
 gui/WalletEvents.h \
-update.h \
 gui/ConnectionSettings.h \
 gui/NewNodeDialog.h \
 gui/NodeModel.h \
