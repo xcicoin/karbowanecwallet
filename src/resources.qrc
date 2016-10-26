@@ -33,8 +33,8 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="splash">images/splash.png</file>
-        <file alias="cryptonote">images/karbowanez.png</file>
-        <file alias="coin">images/krbcoin.png</file>
+        <file alias="cryptonote">images/xcicoin.png</file>
+        <file alias="coin">images/xcicoin.png</file>
         <file alias="clock">images/clock.gif</file>
         <file alias="bg.png">images/bg.png</file>
     </qresource>
