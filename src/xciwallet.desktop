@@ -1,0 +1,19 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=XCIwallet
+Name[uk]=XCIwallet
+Name[ru]=XCIwallet
+Name[pl]=XCIwallet
+Name[be]=XCIwallet
+Comment=XCI wallet
+Comment[uk]=XCI wallet
+Comment[ru]=XCI wallet
+Comment[pl]=XCI wallet
+Comment[be]=XCI wallet
+Exec=xciwallet
+Terminal=false
+Type=Application
+Icon=xciwallet
+MimeType=x-scheme-handler/xciwallet;
+Categories=Office;Finance;
+Version=0.2.7
