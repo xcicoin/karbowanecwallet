@@ -101,7 +101,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "node.karbowanec.com:32348" << "pool2.democats.org:7671";
+  defaultNodesList << "5.189.135.137:3332" << "gorillapool.org:3333" << "xci.acidminer.org:3000" << "pool3.democats.org:45710" << "xci.poolcoin.biz:3510" << "xci.frewns.com:5555";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRPCNodesList(QStringList() << defaultNodesList);
   } else {
