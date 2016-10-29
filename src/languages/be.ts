@@ -882,7 +882,7 @@ Do you want to go to download page?</source>
         <translation>Запуск прыкладанняў у фонавым рэжыме</translation>
     </message>
     <message>
-        <source>Karbowanec wallet</source>
+        <source>XCI wallet</source>
         <translation>Гаманец карбованцаў</translation>
     </message>
     <message>
