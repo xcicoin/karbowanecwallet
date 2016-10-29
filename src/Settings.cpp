@@ -87,7 +87,7 @@ void Settings::load() {
   }
 
   QStringList defaultPoolList;
-  defaultPoolList << "pool.karbowanec.com:3333" << "pool2.democats.org:45570";
+  defaultPoolList << "5.189.135.137:3332" << "gorillapool.org:3333" << "xci.acidminer.org:3000" << "pool3.democats.org:45710" << "xci.poolcoin.biz:3510" << "xci.frewns.com:5555";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
     setMiningPoolList(QStringList() << defaultPoolList);
   } else {
@@ -101,7 +101,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "5.189.135.137:3332" << "gorillapool.org:3333" << "xci.acidminer.org:3000" << "pool3.democats.org:45710" << "xci.poolcoin.biz:3510" << "xci.frewns.com:5555";
+  defaultNodesList  << "104.131.137.173:42000";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRPCNodesList(QStringList() << defaultNodesList);
   } else {
