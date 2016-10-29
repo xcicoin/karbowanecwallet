@@ -2,4 +2,4 @@
 set(CN_PROJECT_NAME "xciwallet")
 set(CN_CURRENCY_DISPLAY_NAME "XCI Coin")
 set(CN_CURRENCY_TICKER "XCI")
-set(CN_VERSION 1.0.0)
+set(CN_VERSION 2.0.0-beta)
