@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2016 The Cryptonote developers
 // Copyright (c) 2015-2016 XDN developers
 // Copyright (c) 2016 Karbowanec developers
+// Copyright (c) 2016 XCI developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -297,7 +298,7 @@ void MainWindow::DisplayCmdLineHelp() {
     QMessageBox *msg = new QMessageBox(QMessageBox::Information, QObject::tr("Help"),
                        cmdLineParser.getHelpText(),
                        QMessageBox::Ok, this);
-    msg->setInformativeText(tr("More info can be found at www.karbowanec.com in Documentation section"));
+    msg->setInformativeText(tr("More info can be found at https://xcicoin.org"));
     QFont font = QFontDatabase::systemFont(QFontDatabase::FixedFont);
     msg->setFont(font);
     QSpacerItem* horizontalSpacer = new QSpacerItem(650, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
