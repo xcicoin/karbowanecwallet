@@ -12,7 +12,7 @@ You can do it with the following commands if you run use Ubuntu:
 ```
 git clone https://github.com/xcicoin/xciwallet.git
 cd xciwallet
-git clone https://github.com/xcicoin/xcicoin cryptonote
+git clone https://github.com/xcicoin/xcicoin-1.0.11 cryptonote
 mkdir build
 cd build
 cmake ..
